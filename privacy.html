@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &middot; SciPTC Upload</title>
+<meta name="description" content="Privacy policy for SciPTC Upload, a personal research data utility.">
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --text:#e6e8ee; --muted:#a3a9b8;
+    --line:#262b36; --accent:#6ea8fe;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7f8fa; --panel:#ffffff; --text:#1a1d24; --muted:#5b6273;
+           --line:#e3e6ec; --accent:#1a56db; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.68 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:56px 22px 72px}
+  h1{font-size:26px; margin:0 0 6px; letter-spacing:-.3px}
+  .sub{color:var(--muted); font-size:14px; margin:0 0 32px}
+  h2{font-size:17px; margin:30px 0 8px}
+  p{margin:0 0 14px}
+  ul{margin:8px 0 0; padding-left:20px}
+  li{margin:7px 0}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  nav{margin-top:42px; padding-top:20px; border-top:1px solid var(--line);
+      display:flex; flex-wrap:wrap; gap:18px; font-size:14px}
+  footer{margin-top:28px; color:var(--muted); font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="sub">SciPTC Upload &middot; Last updated: 12 November 2026</p>
+
+  <p><strong>SciPTC Upload</strong> is a personal utility operated by a single individual for
+  their own research data management. It is not a public service, and it has no user
+  registration of any kind.</p>
+
+  <h2>1. Who this applies to</h2>
+  <p>There is exactly one user: the owner of the tool and of the Google account that authorises
+  it. No other person can sign in, create an account, or use this tool.</p>
+
+  <h2>2. What the tool does with Google Drive</h2>
+  <p>The tool is authorised with the Google Drive scope (full Drive access). It uses that
+  authorisation to:</p>
+  <ul>
+    <li>create and manage folders inside the owner&rsquo;s own Drive;</li>
+    <li>upload ZIP archives of scientific research output;</li>
+    <li>list files and read file metadata such as name, size, and modification time;</li>
+    <li>verify that an uploaded file exists and matches the expected size;</li>
+    <li>move, rename, or delete objects only when the owner explicitly asks it to.</li>
+  </ul>
+  <p>The full Drive scope is requested because rclone&rsquo;s Google Drive backend operates on
+  the whole Drive: folder creation, listing, and file moves all require it. This policy does
+  not claim narrower access than the tool actually holds. The tool is operated only against
+  the owner&rsquo;s own Drive and is not pointed at anybody else&rsquo;s account.</p>
+
+  <h2>3. What this website collects</h2>
+  <p>Nothing. This site is a set of static HTML pages. It sets no cookies, runs no analytics,
+  loads no third-party scripts, fonts, or images, and has no forms or comment systems.</p>
+
+  <h2>4. Where credentials are stored</h2>
+  <p>OAuth client credentials and refresh tokens are stored only in the rclone configuration
+  on machines controlled by the owner. They are never sent to, embedded in, or served by
+  this website. This site contains no tokens, keys, or configuration files.</p>
+
+  <h2>5. What happens to the research files</h2>
+  <p>Research archives are uploaded from the owner&rsquo;s own systems to the owner&rsquo;s own
+  Google Drive. They are not sold, published, or transferred to any other third party by this
+  tool. Google&rsquo;s handling of data stored in Drive is governed by Google&rsquo;s own terms
+  and privacy policy.</p>
+
+  <h2>6. Third parties</h2>
+  <p>The tool talks to two external services only: the Google Drive API, to store the
+  owner&rsquo;s own files, and (optionally) GitHub, to host these static pages. No advertising,
+  profiling, or data-broker service is involved.</p>
+
+  <h2>7. Retention and deletion</h2>
+  <p>Archives remain in the owner&rsquo;s Drive until the owner deletes them. Deleting a file in
+  Drive removes it from the account; the tool keeps no separate copy of Drive contents.</p>
+
+  <h2>8. Revoking access</h2>
+  <p>The owner can revoke this application&rsquo;s access at any time from the Google Account
+  permissions page (<a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>).
+  Revocation immediately invalidates the stored refresh token, and the tool stops working until
+  it is authorised again.</p>
+
+  <h2>9. Children</h2>
+  <p>This tool is not directed at children and is not offered to the public, so it does not
+  knowingly collect information from anyone, including children.</p>
+
+  <h2>10. Changes</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new
+  &ldquo;last updated&rdquo; date.</p>
+
+  <h2>11. Contact</h2>
+  <p>For any question about this policy, contact the owner through the GitHub account that
+  hosts this site: <a href="https://github.com/" rel="noopener">github.com</a>.</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+  <footer>SciPTC Upload is a personal, non-commercial tool.</footer>
+</div>
+</body>
+</html>

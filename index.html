@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SciPTC Upload</title>
+<meta name="description" content="SciPTC Upload is a personal research data management utility powered by rclone and the Google Drive API.">
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --text:#e6e8ee; --muted:#a3a9b8;
+    --line:#262b36; --accent:#6ea8fe;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7f8fa; --panel:#ffffff; --text:#1a1d24; --muted:#5b6273;
+           --line:#e3e6ec; --accent:#1a56db; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:56px 22px 72px}
+  header{display:flex; align-items:center; gap:12px; margin-bottom:8px}
+  .logo{
+    width:38px;height:38px;border-radius:9px;background:var(--accent);
+    display:grid;place-items:center;color:#fff;font-weight:700;font-size:17px;
+    flex:0 0 auto;
+  }
+  h1{font-size:27px; margin:0; letter-spacing:-.3px}
+  .tag{color:var(--muted); font-size:14px; margin:0 0 34px}
+  h2{font-size:17px; margin:34px 0 10px; letter-spacing:-.1px}
+  p{margin:0 0 14px}
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:20px 22px; margin:0 0 18px;
+  }
+  ul{margin:8px 0 0; padding-left:20px}
+  li{margin:6px 0}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  nav{margin-top:44px; padding-top:20px; border-top:1px solid var(--line);
+      display:flex; flex-wrap:wrap; gap:18px; font-size:14px}
+  footer{margin-top:30px; color:var(--muted); font-size:13px}
+  code{
+    background:var(--panel); border:1px solid var(--line); border-radius:5px;
+    padding:1px 6px; font-size:13.5px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">S</div>
+    <h1>SciPTC Upload</h1>
+  </header>
+  <p class="tag">A personal research data utility &middot; rclone + Google Drive API</p>
+
+  <div class="card">
+    <p><strong>SciPTC Upload</strong> is a personal research data management utility powered by
+    rclone and the Google Drive API. It is used by its owner to upload, organize, and verify
+    scientific research archives in their authorized Google Drive account.</p>
+    <p>This website only describes that personal tool. It does not host the tool, and it does
+    not offer any service to the public.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Packages locally generated scientific research output into ZIP archives.</li>
+    <li>Uploads those archives to the owner&rsquo;s own Google Drive using the Google Drive API.</li>
+    <li>Verifies that uploaded files exist and match the expected size.</li>
+    <li>Organizes archives into dated folders and records their file identifiers.</li>
+  </ul>
+
+  <h2>Who uses it</h2>
+  <p>One person: the owner of the tool and of the Google Drive account it writes to.
+  There is no sign-up, no user accounts, and no multi-tenant access.</p>
+
+  <h2>How Google Drive is used</h2>
+  <p>The tool requests the Google Drive scope so that it can create folders, upload archives,
+  list files, read file metadata, and remove or replace objects that the owner explicitly asks
+  it to manage. It operates only inside the owner&rsquo;s own Drive.</p>
+
+  <h2>Data handling</h2>
+  <p>OAuth credentials are stored only on machines controlled by the owner. This website is
+  static: it collects nothing, sets no cookies, and loads no third-party scripts, fonts,
+  or analytics.</p>
+
+  <nav>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="https://github.com/" rel="noopener">GitHub</a>
+  </nav>
+  <footer>Last updated: 12 November 2026</footer>
+</div>
+</body>
+</html>
